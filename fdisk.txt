@@ -1,0 +1,41 @@
+Disco /dev/sda: 931,51 GiB, 1000204886016 bytes, 1953525168 sectores
+Modelo de disco: WD Blue SA510 2.
+Unidades: sectores de 1 * 512 = 512 bytes
+Tamaño de sector (lógico/físico): 512 bytes / 512 bytes
+Tamaño de E/S (mínimo/óptimo): 512 bytes / 512 bytes
+Tipo de etiqueta de disco: gpt
+Identificador del disco: C11508EC-AA78-4E25-BE46-61703E3874A1
+
+Disposit.  Comienzo      Final   Sectores Tamaño Tipo
+/dev/sda1        34      32767      32734    16M Reservado para Microsoft
+/dev/sda2     32768 1953521663 1953488896 931,5G Datos básicos de Microsoft
+
+
+Disco /dev/nvme0n1: 465,76 GiB, 500107862016 bytes, 976773168 sectores
+Modelo de disco: WDC WDS500G2B0C-00PXH0                  
+Unidades: sectores de 1 * 512 = 512 bytes
+Tamaño de sector (lógico/físico): 512 bytes / 512 bytes
+Tamaño de E/S (mínimo/óptimo): 512 bytes / 512 bytes
+Tipo de etiqueta de disco: gpt
+Identificador del disco: 961D34A3-3901-485E-9BF6-A6B1470AD9C6
+
+Disposit.       Comienzo     Final  Sectores Tamaño Tipo
+/dev/nvme0n1p1      2048    206847    204800   100M Sistema EFI
+/dev/nvme0n1p2    206848    239615     32768    16M Reservado para Microsoft
+/dev/nvme0n1p3    239616 975364095 975124480   465G Datos básicos de Microsoft
+/dev/nvme0n1p4 975364096 976771071   1406976   687M Entorno de recuperación de Windows
+
+
+Disco /dev/nvme1n1: 232,89 GiB, 250059350016 bytes, 488397168 sectores
+Modelo de disco: HP SSD EX900 250GB                      
+Unidades: sectores de 1 * 512 = 512 bytes
+Tamaño de sector (lógico/físico): 512 bytes / 512 bytes
+Tamaño de E/S (mínimo/óptimo): 512 bytes / 512 bytes
+Tipo de etiqueta de disco: gpt
+Identificador del disco: DB40C8A1-D9A1-444E-94B0-AA485DDC0864
+
+Disposit.       Comienzo     Final  Sectores Tamaño Tipo
+/dev/nvme1n1p1      2048   1050623   1048576   512M Sistema EFI
+/dev/nvme1n1p2   1050624 211185663 210135040 100,2G Sistema de ficheros de Linux
+/dev/nvme1n1p3 211185664 421320703 210135040 100,2G Sistema de ficheros de Linux
+/dev/nvme1n1p4 421320704 488396799  67076096    32G Linux swap
