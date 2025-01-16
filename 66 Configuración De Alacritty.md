@@ -13,7 +13,6 @@
 # Autor: Daniel Benjamin Perez Morales
 # GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
 # Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
-# Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
 # Correo electrónico: danielperezdev@proton.me
 
 [window]
@@ -99,7 +98,6 @@ builtin_box_drawing = true
      # Autor: Daniel Benjamin Perez Morales
      # GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
 # Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
-# Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
      # Correo electrónico: danielperezdev@proton.me 
 
      program_options:
@@ -158,7 +156,6 @@ builtin_box_drawing = true
    
    # Autor: Daniel Benjamin Perez Morales
    # GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
 # Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
    # Correo electrónico: danielperezdev@proton.me 
    

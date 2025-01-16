@@ -184,7 +184,6 @@ xrdb -merge ~/.Xresources
 ```ini
 # Autor: Daniel Benjamin Perez Morales    
 # GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
 # Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13    
 # Correo electrónico: danielperezdev@proton.me
 
@@ -358,7 +357,6 @@ session-wrapper=/etc/lightdm/Xsession
 ```ini
 # Autor: Daniel Benjamin Perez Morales    
 # GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
 # Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13    
 # Correo electrónico: danielperezdev@proton.me
 

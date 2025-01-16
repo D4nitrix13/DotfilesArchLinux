@@ -17,7 +17,6 @@ Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-"))
 # Autor: Daniel Benjamin Perez Morales
 # GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
 # Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
-# Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
 # Correo electrónico: danielperezdev@proton.me 
 
 # Copyright (c) 2010 Aldo Cortesi
