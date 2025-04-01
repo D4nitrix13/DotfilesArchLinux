@@ -34,7 +34,7 @@ touch ~/.xsession
 - **Para asegurarnos de que `.xsession` funcione correctamente, necesitamos instalar `xorg-xinit`:**
 
 ```bash
-sudo pacman -Syu xorg-xinit
+sudo pacman -Syu xorg-xinit --noconfirm
 ```
 
 - [*clonar un repositorio de Wallpapers*](https://github.com/DanielBenjaminPerezMoralesDev13/Wallpapers.git "https://github.com/DanielBenjaminPerezMoralesDev13/Wallpapers.git")
