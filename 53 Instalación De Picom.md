@@ -3,7 +3,7 @@
 **Para instalar `picom` en tu sistema Arch Linux, puedes utilizar el gestor de paquetes `pacman`:**
 
 ```bash
-sudo pacman -Syu picom
+sudo pacman -Syu picom --noconfirm
 ```
 
 - **`sudo`:** *Ejecuta el comando con privilegios de superusuario.*
