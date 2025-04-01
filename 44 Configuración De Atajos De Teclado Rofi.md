@@ -339,7 +339,7 @@ rofi -show drun
 
 ---
 
-#### ***Ejemplo de Configuración* Default (`config.rasi`)***
+#### ***Ejemplo de Configuración Default (`config.rasi`)***
 
 ```plaintext
 @theme "/usr/share/rofi/themes/android_notification.rasi"
