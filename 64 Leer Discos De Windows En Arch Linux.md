@@ -8,7 +8,7 @@
 **Para instalar paquetes que te permitan leer discos de Windows en Arch Linux, puedes usar el siguiente comando:**
 
 ```bash
-sudo pacman -Syu ntfs-3g
+sudo pacman -Syu ntfs-3g --noconfirm
 ```
 
 ---
