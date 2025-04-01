@@ -10,7 +10,7 @@
 1. **Actualizar el sistema y las herramientas necesarias:**
 
    ```bash
-   sudo pacman -Syu binutils
+   sudo pacman -Syu binutils --noconfirm
    ```
 
 2. **Instalar fuentes específicas usando `yay`:**
@@ -18,19 +18,37 @@
    - **Ubuntu Mono Nerd Font:**
 
      ```bash
-     yay -Syu ttf-ubuntu-mono-nerd
+     yay -Syu ttf-ubuntu-mono-nerd --noconfirm
      ```
 
    - **Fira Code Nerd Font:**
 
      ```bash
-     yay -Syu ttf-firacode-nerd
+     yay -Syu ttf-firacode-nerd --noconfirm
      ```
 
    - **Cascadia Code:**
 
      ```bash
-     yay -Syu ttf-cascadia-code
+     yay -Syu ttf-cascadia-code --noconfirm
+     ```
+
+   - **Victor Mono:**
+
+     ```bash
+     yay -Syu ttf-victor-mono-nerd --noconfirm
+     ```
+
+   - **Mononoki:**
+
+     ```bash
+     yay -Syu ttf-mononoki-nerd --noconfirm
+     ```
+
+   - **Agave:**
+
+     ```bash
+     yay -Syu ttf-agave-nerd --noconfirm
      ```
 
 3. **Listar las fuentes instaladas:**
@@ -189,15 +207,23 @@
 
 ## ***Recursos Documentacion y Pagina Oficial Para Descargar Los Paquetes***
 
-- [binutils](https://archlinux.org/packages/core/x86_64/binutils/ "https://archlinux.org/packages/core/x86_64/binutils/")
+- *[binutils](https://archlinux.org/packages/core/x86_64/binutils/ "https://archlinux.org/packages/core/x86_64/binutils/")*
 
-- [ttf-ubuntu-mono-nerd](https://archlinux.org/packages/extra/any/ttf-ubuntu-mono-nerd/ "https://archlinux.org/packages/extra/any/ttf-ubuntu-mono-nerd/")
+- *[ttf-ubuntu-mono-nerd](https://archlinux.org/packages/extra/any/ttf-ubuntu-mono-nerd/ "https://archlinux.org/packages/extra/any/ttf-ubuntu-mono-nerd/")*
 
-- [ttf-fira-code](https://archlinux.org/packages/extra/any/ttf-fira-code/ "https://archlinux.org/packages/extra/any/ttf-fira-code/")
+- *[ttf-fira-code](https://archlinux.org/packages/extra/any/ttf-fira-code/ "https://archlinux.org/packages/extra/any/ttf-fira-code/")*
 
-- [ttf-cascadia-code](https://archlinux.org/packages/extra/any/ttf-cascadia-code/ "https://archlinux.org/packages/extra/any/ttf-cascadia-code/")
+- *[ttf-cascadia-code](https://archlinux.org/packages/extra/any/ttf-cascadia-code/ "https://archlinux.org/packages/extra/any/ttf-cascadia-code/")*
+
+- *[ttf-victor-mono-nerd](https://archlinux.org/packages/extra/any/ttf-victor-mono-nerd/ "https://archlinux.org/packages/extra/any/ttf-victor-mono-nerd/")*
+
+- *[ttf-mononoki-nerd](https://archlinux.org/packages/extra/any/ttf-mononoki-nerd/ "https://archlinux.org/packages/extra/any/ttf-mononoki-nerd/")*
+
+- *[ttf-agave-nerd](https://archlinux.org/packages/extra/any/ttf-agave-nerd/ "https://archlinux.org/packages/extra/any/ttf-agave-nerd/")*
 
 - **Binutils** *(GNU Binary Utilities) es una colección de herramientas de desarrollo proporcionadas por el Proyecto GNU para la manipulación de ficheros binarios en sistemas Unix y Unix-like, como Linux. Estas herramientas son esenciales para la compilación, ensamblaje y enlace de programas, y se utilizan comúnmente en el desarrollo de software en entornos de programación de bajo nivel.*
+
+- *[Fonts](https://archlinux.org/groups/x86_64/nerd-fonts/ "https://archlinux.org/groups/x86_64/nerd-fonts/")*
 
 ---
 
