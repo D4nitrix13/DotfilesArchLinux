@@ -379,7 +379,7 @@ element {
 **Para aplicar un tema, usa el siguiente comando:**
 
 ```bash
-rofi -show drun -theme <ruta_al_tema>
+rofi -show drun -theme <Path-Theme>
 ```
 
 ---
