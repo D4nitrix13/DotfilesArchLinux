@@ -8,7 +8,7 @@
 **Para reproducir videos usando VLC en Arch Linux, primero debes instalarlo con el siguiente comando:**
 
 ```bash
-sudo pacman -Syu vlc
+sudo pacman -Syu vlc --noconfirm
 ```
 
 ## ***Información adicional***
@@ -21,7 +21,7 @@ sudo pacman -Syu vlc
 **Una vez instalado VLC, puedes reproducir un video desde la terminal utilizando:**
 
 ```bash
-vlc /ruta/al/video
+vlc Path-Video
 ```
 
-- *Asegúrate de reemplazar `ruta-al-video` con la ubicación y nombre del fichero de video que deseas reproducir. Esto iniciará VLC y reproducirá el video especificado.*
+- *Asegúrate de reemplazar `Path-Video` con la ubicación y nombre del fichero de video que deseas reproducir. Esto iniciará VLC y reproducirá el video especificado.*
