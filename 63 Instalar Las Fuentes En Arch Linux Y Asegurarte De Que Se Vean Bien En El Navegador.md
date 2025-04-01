@@ -8,7 +8,7 @@
 **Para instalar las fuentes en Arch Linux y asegurarte de que se vean bien en el navegador, puedes usar el siguiente comando:**
 
 ```bash
-sudo pacman -Syu ttf-dejavu ttf-liberation noto-fonts
+sudo pacman -Syu ttf-dejavu ttf-liberation noto-fonts --noconfirm
 ```
 
 **Aquí tienes la información de los repositorios y las páginas oficiales de cada una de estas fuentes:**
