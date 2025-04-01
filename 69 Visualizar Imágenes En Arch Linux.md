@@ -8,7 +8,7 @@
 **Para visualizar imágenes en Arch Linux, puedes instalar el visor de imágenes `imv` con el siguiente comando:**
 
 ```bash
-sudo pacman -Syu imv
+sudo pacman -Syu imv --noconfirm
 ```
 
 ---
