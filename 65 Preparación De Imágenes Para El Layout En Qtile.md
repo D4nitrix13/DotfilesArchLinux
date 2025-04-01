@@ -52,7 +52,7 @@
    ```
 
    ```bash
-   drwxr-xr-x d4nitrix13 d4nitrix13 4.0 KB Wed Jun 26 04:45:42 2024  **pycache**
+   drwxr-xr-x d4nitrix13 d4nitrix13 4.0 KB Wed Jun 26 04:45:42 2024  __pycache__
    .rwxr--r-- d4nitrix13 d4nitrix13  40 B  Sun Jun  9 11:23:47 2024  autostart.sh
    .rw-r--r-- d4nitrix13 d4nitrix13  16 KB Wed Jun 26 04:45:40 2024  config.py
    drwxr-xr-x d4nitrix13 d4nitrix13 4.0 KB Wed Jun 26 04:41:48 2024  img
