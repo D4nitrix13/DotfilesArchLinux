@@ -6,7 +6,7 @@
 # ***Configuración de Atajos de Teclado***
 
 ```bash
-sudo pacman -Syu rofi
+sudo pacman -Syu rofi --noconfirm
 ```
 
 **A continuación se muestra cómo añadir atajos de teclado para abrir el menú y para la navegación entre ventanas utilizando `rofi`:**
