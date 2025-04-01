@@ -42,7 +42,7 @@
 3. **Descomprimir el fichero:**
 
     ```bash
-    tar -xzvf 165371-Breeze.tar.gz
+    tar -xzvf 165371-Breeze.tar.tar
     ```
 
 4. **Verificar el contenido del directorio descomprimido:**
@@ -71,7 +71,7 @@
     ```ini
     # Autor: Daniel Benjamin Perez Morales
     # GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+    # Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
     # Correo electrónico: danielperezdev@proton.me
 
     [Icon Theme]
@@ -93,7 +93,7 @@
     ```ini
     # Autor: Daniel Benjamin Perez Morales
     # GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+    # Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
     # Correo electrónico: danielperezdev@proton.me
 
     [Settings]
@@ -128,7 +128,7 @@
     ```ini
     # Autor: Daniel Benjamin Perez Morales
     # GitHub: https://github.com/DanielBenjaminPerezMoralesDev13
-# Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
+    # Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13
     # Correo electrónico: danielperezdev@proton.me
 
     gtk-cursor-theme-name="Breeze"
