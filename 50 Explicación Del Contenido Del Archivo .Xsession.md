@@ -10,7 +10,7 @@
 - **`if [ -f "$userresources" ]; then ... fi`:** *Similar al anterior, pero para los recursos del usuario.*
 - **`if [ -d /etc/X11/xinit/xinitrc.d ] ; then ... fi`:** *Ejecuta scripts en `/etc/X11/xinit/xinitrc.d` si existen.*
 - **`setxkbmap latam &`:** *Configura el diseño del teclado en español latinoamericano (`latam`) y lo ejecuta en segundo plano.*
-- **`feh --bg-scale /home/user/Wallpapers/Img/09.jpg`:** *Establece una imagen de fondo de pantalla escalada.*
+- **`feh --bg-scale "/home/d4nitrix13/Wallpapers/JPG/09 Wallpaper.jpg"`:** *Establece una imagen de fondo de pantalla escalada.*
 - **`pulseaudio --start &`:** *Inicia el servidor de sonido PulseAudio en segundo plano.*
 
 *Con estas configuraciones, `.xsession` se encargará de ejecutar la configuración necesaria al iniciar una sesión X en tu sistema Arch Linux.*
