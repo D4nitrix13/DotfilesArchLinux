@@ -497,27 +497,10 @@ textbox-prompt-colon {
 ```
 ---
 
-#### ***Ejemplo de Configuración Básica (`config.rasi`)***
+#### ***Configuración Theme (`~/.config/rofi/config.rasi`)***
 
 ```bash
-configuration {
-    font: "monospace 10";
-    !theme: "gruvbox";
-}
-
-window {
-    width: 50%;
-    lines: 10;
-}
-
-listview {
-    spacing: 2;
-}
-
-element {
-    border: 1px;
-    border-radius: 5px;
-}
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
 ```
 
 ---
