@@ -15,11 +15,10 @@
     sudo pacman -Syu --noconfirm lxappearance
     ```
 
-2. **Abrir LXAppearance con Rofi:**
+2. **Abrir LXAppearance:**
 
     ```bash
-    # mod4 + m
-    rofi -show run -run-command 'lxappearance'
+    lxappearance
     ```
 
     - *También puedes añadir LXAppearance a tu configuración de Qtile para abrirlo fácilmente con un atajo de teclado.*
