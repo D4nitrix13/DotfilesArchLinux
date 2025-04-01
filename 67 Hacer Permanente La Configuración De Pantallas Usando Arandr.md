@@ -81,7 +81,7 @@
     udiskie -t &
     
     # Background image
-    feh --bg-scale /home/d4nitrix13/Wallpapers/Img/09.jpg
+    feh --bg-scale "/home/d4nitrix13/Wallpapers/JPEG/09 Wallpaper.jpeg"
     
     # Audio
     pulseaudio --start
