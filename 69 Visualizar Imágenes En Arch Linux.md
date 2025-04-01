@@ -21,10 +21,10 @@ sudo pacman -Syu imv --noconfirm
 **Una vez instalado `imv`, puedes abrir una imagen desde la terminal usando:**
 
 ```bash
-imv /ruta/a/la/imagen
+imv /Path/Video
 ```
 
-- *Esto abrirá la imagen especificada en `imv`, y si decides guardar alguna modificación (como ajustes de zoom o rotación), la imagen se guardará automáticamente en el directorio desde el cual se lanzó `imv`. Asegúrate de sustituir `/ruta/a/la/imagen` por la ubicación y nombre del fichero de imagen que deseas visualizar.*
+- *Esto abrirá la imagen especificada en `imv`, y si decides guardar alguna modificación (como ajustes de zoom o rotación), la imagen se guardará automáticamente en el directorio desde el cual se lanzó `imv`. Asegúrate de sustituir `/Path/Video` por la ubicación y nombre del fichero de imagen que deseas visualizar.*
 
 ### ***imv ahora está alojado en sr.ht***
 
