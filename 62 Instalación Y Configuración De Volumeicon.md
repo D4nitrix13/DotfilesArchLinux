@@ -8,7 +8,7 @@
 **Para instalar `volumeicon`, ejecuta el siguiente comando en tu terminal:**
 
 ```bash
-sudo pacman -Syu volumeicon
+sudo pacman -Syu volumeicon --noconfirm
 ```
 
 **Después de instalarlo, puedes ejecutarlo usando:**
