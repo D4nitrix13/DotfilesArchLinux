@@ -69,7 +69,7 @@ builtin_box_drawing = true
    **Instala `udisks2` y `udiskie` desde los repositorios de Arch Linux:**
 
    ```bash
-   sudo pacman -Syu udisks2 udiskie
+   sudo pacman -Syu udisks2 udiskie --noconfirm
    ```
 
 2. **Verificación y configuración de `udisks2`:**
