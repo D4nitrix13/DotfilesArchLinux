@@ -8,8 +8,8 @@
 - **Para monitorear y gestionar el audio en tu sistema Arch Linux, puedes utilizar `pavucontrol` y `pulseaudio`. Aquí se detalla cómo instalarlos:**
 
 ```bash
-sudo pacman -Syu pavucontrol
-sudo pacman -Syu pulseaudio
+sudo pacman -Syu pavucontrol --noconfirm
+sudo pacman -Syu pulseaudio --noconfirm
 ```
 
 - **`sudo`:** *Ejecuta los comandos con privilegios de superusuario.*
