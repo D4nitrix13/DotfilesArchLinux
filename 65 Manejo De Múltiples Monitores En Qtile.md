@@ -115,7 +115,7 @@ xrandr --output eDP-1 --primary --mode 1920x1080 --output HDMI-1 --mode 1920x108
 - *Para facilitar la configuración de múltiples monitores, puedes instalar `arandr`, una herramienta gráfica que proporciona una interfaz amigable para gestionar las pantallas.*
 
 ```bash
-sudo pacman -Syu arandr
+sudo pacman -Syu arandr --noconfirm
 ```
 
 - *Al ejecutar `arandr`, se abrirá una aplicación gráfica donde puedes ajustar la configuración de tus monitores. Después de realizar los cambios, haz clic en el botón "Aplicar" para aplicar los ajustes. Luego, reinicia el gestor de ventanas Qtile con la combinación de teclas `Mod4 + Ctrl + r`.*
