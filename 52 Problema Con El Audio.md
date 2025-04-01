@@ -73,7 +73,7 @@ exec ~/.xsession
 
 3. **Revisar el fichero de servicio de PulseAudio:** *Verifica el contenido del fichero `/usr/lib/systemd/user/pulseaudio.service` y asegúrate de que esté configurado correctamente. Aquí tienes cómo debería verse típicamente:*
 
-   ```txt
+   ```toml
    [Unit]
     Description=Sound Service
 
