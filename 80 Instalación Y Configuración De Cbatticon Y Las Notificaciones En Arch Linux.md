@@ -16,7 +16,7 @@
    cbatticon &
    ```
 
-   - *Añadimos esto al fichero `autostart.sh`*
+   - *Añadimos esto al fichero `~/.config/qtile/autostart.sh`*
 
    ```bash
    # systray battery icon
