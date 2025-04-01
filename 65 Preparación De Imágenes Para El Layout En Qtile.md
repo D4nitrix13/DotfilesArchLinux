@@ -78,7 +78,7 @@
    **Para editar imágenes, como descargar y manipular `bar2.png`, instalamos GIMP:**
 
    ```bash
-   sudo pacman -Syu gimp
+   sudo pacman -Syu gimp --noconfirm
    ```
 
 2. **Reiniciar sesión:**
