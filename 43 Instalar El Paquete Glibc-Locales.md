@@ -8,7 +8,7 @@
 **Para instalar paquetes en Arch Linux, se utiliza el gestor de paquetes `pacman`. Aquí se explica cómo instalar el paquete `glibc-locales` y generar locales utilizando `locale-gen`:**
 
 ```bash
-sudo pacman -Syu glibc-locales
+sudo pacman -Syu glibc-locales --noconfirm
 ```
 
 - **`sudo`:** *Ejecuta el comando con privilegios de superusuario.*
