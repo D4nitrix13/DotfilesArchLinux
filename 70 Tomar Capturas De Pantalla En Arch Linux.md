@@ -8,7 +8,7 @@
 **Para tomar capturas de pantalla en Arch Linux, puedes instalar `scrot` con el siguiente comando:**
 
 ```bash
-sudo pacman -Syu scrot
+sudo pacman -Syu scrot --noconfirm
 ```
 
 ---
