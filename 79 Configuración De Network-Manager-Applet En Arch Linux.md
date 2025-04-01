@@ -144,6 +144,9 @@ picom &
 # Network
 nm-applet &
 
+# Notify
+dunst &
+
 # Keyboard Layout
 setxkbmap latam &
 
@@ -154,7 +157,7 @@ xrandr --output DVI-D-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotat
 udiskie -t &
 
 # Background image
-feh --bg-scale /home/d4nitrix13/Wallpapers/Img/09.jpg
+feh --bg-scale "/home/d4nitrix13/Wallpapers/JPEG/09 Wallpaper.jpeg"
 
 # Audio
 pulseaudio --start
