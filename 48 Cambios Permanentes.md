@@ -80,7 +80,7 @@ fi
 setxkbmap latam &
 
 # Background image
-feh --bg-scale /home/d4nitrix13/Wallpapers/Img/09.jpg
+feh --bg-scale "/home/d4nitrix13/Wallpapers/JPG/09 Wallpaper.jpg"
 
 # Start PulseAudio
 pulseaudio --start &
