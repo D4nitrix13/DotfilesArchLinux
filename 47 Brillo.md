@@ -2,7 +2,7 @@
 
 ```bash
 # Instalar
-sudo pacman -Syu brightnessctl
+sudo pacman -Syu brightnessctl --noconfirm
 ```
 
 ```python
