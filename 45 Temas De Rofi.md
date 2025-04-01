@@ -8,7 +8,7 @@
 *Para cambiar el tema de `rofi`, se puede utilizar el selector de temas `rofi-theme-selector`. Primero, asegúrate de tener `feh` instalado:*
 
 ```bash
-sudo pacman -Syu feh
+sudo pacman -Syu feh --noconfirm
 ```
 
 **Luego, ejecuta el selector de temas:**
@@ -18,7 +18,7 @@ rofi-theme-selector
 ```
 
 - **`rofi-theme-selector`:** *Ejecuta el selector de temas `rofi`.*
-- **`feh --bg-scale <ruta>`:** *Establece un fondo de pantalla escalado. Reemplaza `<ruta>` con la ubicación de tu imagen de fondo.*
+- **`feh --bg-scale <path>`:** *Establece un fondo de pantalla escalado. Reemplaza `<path>` con la ubicación de tu imagen de fondo.*
 
 - *Después de seleccionar un tema en `rofi-theme-selector`, puedes previsualizar el tema con `Enter` y aceptar el cambio con `Alt + a`. Luego, establece un fondo de pantalla utilizando `feh`.*
 
