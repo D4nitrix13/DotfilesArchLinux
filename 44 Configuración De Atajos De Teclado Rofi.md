@@ -495,6 +495,7 @@ textbox-prompt-colon {
     text-color: @normal-foreground;
 }
 ```
+
 ---
 
 #### ***Configuración Theme (`~/.config/rofi/config.rasi`)***

@@ -3,6 +3,64 @@
 <!-- Gitlab: https://gitlab.com/DanielBenjaminPerezMoralesDev13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
+<https://wiki.archlinux.org/title/List_of_applications/Utilities>
+
+<https://wiki.archlinux.org/title/Picom>
+<https://wiki.archlinux.org/title/Dunst>
+<https://wiki.archlinux.org/title/LightDM>
+---
+
+si conectamos un disco que tenga varios sistema operativo instalado basta con montar la particion efi para que reconozca windwos si esta instalado y para que reconozca linux
+
+change font grub
+<https://www.baeldung.com/linux/grub-menu-font-size>
+
+grub-mkfont --output=/boot/grub/fonts/ubuntuMonoBoldItalic.pf2 /usr/share/fonts/TTF/UbuntuMonoNerdFontMono-BoldItalic.ttf
+
+echo "GRUB_FONT=/boot/grub/fonts/ubuntuMonoBoldItalic.pf2" | sudo tee -a /etc/default/grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+volume icon directory config
+
+agreagar en .config/qtile/autostart.sh
+
+if [ -f /sys/class/power_supply/BAT0/status ]; then
+    cbatticon -u 5 &
+fi
+
+sudo pacman -Syu --noconfirm wmctrl xorg-xprop xorg-xwininfo xorg-xrandr
+
+sudo pacman -Syu --noconfirm psutils python-pip python-psutil
+sudo pacman -Syu pacman-contrib --noconfirm
+sudo pacman -Syu python-dbus-fast --noconfirm
+sudo pacman -Syu --noconfirm lightdm-slick-greeter
+sudo pacman -Syu upower --noconfirm
+
+sudo pacman -Syu cronie --noconfirm
+
+sudo systemctl enable cronie.service
+export VISUAL="nvim"
+export EDITOR="nvim"
+
+sudo mkdir /root/Scripts -pv
+mkdir /home/d4nitrix13/Scripts -pv
+
+mkdir ~/.config/dunst -pv
+
+mkdir ~/.config/picom -pv
+touch ~/.config/picom/picom.conf
+
+cp /etc/dunst/dunstrc ~/.config/dunst/dunstrc
+
+optional no
+sudo pacman -Syu redshift --noconfirm
+sudo pacman -Syu --noconfirm lightdm-webkit2-greeter
+
+borrar
+sudo pacman -R redshift --noconfirm
+sudo pacman -R --noconfirm lightdm-webkit2-greeter
+
+---
+
 # jaja
 
 eres experto en arch linux me diras como funciona este paquete a bajo nivel
@@ -37,6 +95,8 @@ atajo de teclado vscode y firefox ctrl + w cierra ventana
 <!-- todo -->
 
 instalar psutils y python-pip python-psutil
+
+sudo pacman -Syu --noconfirm psutils python-pip python-psutil
 
 ```bash
 pacman -Ss psutil
