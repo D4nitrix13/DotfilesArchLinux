@@ -1,3 +1,363 @@
+<!-- Autor: Daniel Benjamin Perez Morales -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- Gitlab: https://gitlab.com/D4nitrix13 -->
+<!-- Correo electrónico: danielperezdev@proton.me -->
+
+# ***Manejar múltiples monitores en Qtile***
+
+- *Para manejar múltiples monitores en Qtile, en el fichero de configuración de Qtile, específicamente en la sección de `screens`,*
+
+```python
+screens = [
+    Screen(
+        top=bar.Bar(
+            [
+                widget.GroupBox(
+                    foreground=["#f1ffff", "#f1ffff"],
+                    background=["#0f101a", "#0f101a"],
+                    font='UbuntuMono Nerd Font Mono',
+                    fontsize=19,
+                    margin_y=3,
+                    margin_x=0,
+                    padding_y=8,
+                    padding_x=5,
+                    borderwidth=1,
+                    active=["#f1ffff", "#f1ffff"],
+                    inactive=["#f1ffff", "#f1ffff"],
+                    rounded=False,
+                    highlight_method='block',
+                    urgent_alert_method='block', # <- linea agregada ... no he visto su uso
+                    urgent_border=["#F07178", "#F07178"], # <- linea agregada ... no he visto su uso
+                    this_current_screen_border=["#a151d3", "#a151d3"],
+                    this_screen_border=["#353c4a", "#353c4a"],
+                    other_current_screen_border=["#0f101a", "#0f101a"],
+                    other_screen_border=["#0f101a", "#0f101a",],
+                    disable_drag=True # <- linea agregada ... no he visto su uso
+                ),
+                # widget.GroupBox(),
+                # widget.Prompt(),
+                widget.WindowName(
+                    foreground=["#a151d3", "#a151d3"],
+                    background=["#0f101a", "#0f101a"],
+                    fontsize=16,
+                    font='UbuntuMono Nerd Font Mono',
+
+                ),
+                widget.Systray(),
+
+                # Nueva Confirguracion
+                widget.Sep(
+                    linewidth=0,
+                    padding=5,
+                    background=["#0f101a","#0f101a"]
+                ),
+
+                # Nueva Confirguracion
+                widget.Image(
+                    filename=path.join(path.expanduser("~"), ".config", "qtile", "img", "bar2.png")
+                ),
+                
+                # Nueva Confirguracion
+                widget.CurrentLayoutIcon(
+                    scale=0.65,
+                    foreground=["#0f101a","#0f101a"],
+                    background=["#F07178","#F07178"] 
+                ),
+
+                # Confirguracion por (Defecto)
+                # widget.CurrentLayout(),
+
+                # Nueva Confirguracion
+                widget.CurrentLayout(
+                    foreground=["#0f101a","#0f101a"],
+                    background=["#F07178","#F07178"],
+                ),
+
+                # Nueva Confirguracion
+                widget.Sep(
+                    linewidth=0,
+                    padding=5,
+                    background=["#F07178","#F07178"]
+                ),
+
+                # Nueva Confirguracion
+                widget.Image(
+                    filename=path.join(path.expanduser("~"), ".config", "qtile", "img", "bar1.png")
+                ),
+
+                widget.Chord(
+                    chords_colors={
+                        "launch": ("#ff0000", "#ffffff"),
+                    },
+                    name_transform=lambda name: name.upper(),
+                ),
+                # widget.TextBox("default config", name="default"),
+
+                # Confirguracion por (Defecto)
+                # widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
+                
+                # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
+                # widget.StatusNotifier(),
+                
+                # Nueva Confirguracion
+                widget.TextBox(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"],text=""), # nf-fa-clock_o
+
+                # Confirguracion por (Defecto)
+                # widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
+
+                # Nueva Confirguracion
+                widget.Clock(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"], padding=5, format='%d/%m/%Y - %H:%M:%S '),
+
+                # widget.QuickExit(),
+            ],
+            26,
+            opacity = 0.95
+            # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
+            # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
+        ),
+        # You can uncomment this variable if you see that on X11 floating resize/moving is laggy
+        # By default we handle these events delayed to already improve performance, however your system might still be struggling
+        # This variable is set to None (no cap) by default, but you can set it to 60 to indicate that you limit it to 60 events per second
+        # x11_drag_polling_rate = 60,
+    ),
+]
+```
+
+**Modificamos:**
+
+```python
+screens = [
+    Screen(
+        top=bar.Bar(
+            [
+                widget.GroupBox(
+                    foreground=["#f1ffff", "#f1ffff"],
+                    background=["#0f101a", "#0f101a"],
+                    font='UbuntuMono Nerd Font Mono',
+                    fontsize=19,
+                    margin_y=3,
+                    margin_x=0,
+                    padding_y=8,
+                    padding_x=5,
+                    borderwidth=1,
+                    active=["#f1ffff", "#f1ffff"],
+                    inactive=["#f1ffff", "#f1ffff"],
+                    rounded=False,
+                    highlight_method='block',
+                    urgent_alert_method='block', # <- linea agregada ... no he visto su uso
+                    urgent_border=["#F07178", "#F07178"], # <- linea agregada ... no he visto su uso
+                    this_current_screen_border=["#a151d3", "#a151d3"],
+                    this_screen_border=["#353c4a", "#353c4a"],
+                    other_current_screen_border=["#0f101a", "#0f101a"],
+                    other_screen_border=["#0f101a", "#0f101a",],
+                    disable_drag=True # <- linea agregada ... no he visto su uso
+                ),
+                # widget.GroupBox(),
+                # widget.Prompt(),
+                widget.WindowName(
+                    foreground=["#a151d3", "#a151d3"],
+                    background=["#0f101a", "#0f101a"],
+                    fontsize=16,
+                    font='UbuntuMono Nerd Font Mono',
+
+                ),
+                widget.Systray(),
+
+                # Nueva Confirguracion
+                widget.Sep(
+                    linewidth=0,
+                    padding=5,
+                    background=["#0f101a","#0f101a"]
+                ),
+
+                # Nueva Confirguracion
+                widget.Image(
+                    filename=path.join(path.expanduser("~"), ".config", "qtile", "img", "bar2.png")
+                ),
+                
+                # Nueva Confirguracion
+                widget.CurrentLayoutIcon(
+                    scale=0.65,
+                    foreground=["#0f101a","#0f101a"],
+                    background=["#F07178","#F07178"] 
+                ),
+
+                # Confirguracion por (Defecto)
+                # widget.CurrentLayout(),
+
+                # Nueva Confirguracion
+                widget.CurrentLayout(
+                    foreground=["#0f101a","#0f101a"],
+                    background=["#F07178","#F07178"],
+                ),
+
+                # Nueva Confirguracion
+                widget.Sep(
+                    linewidth=0,
+                    padding=5,
+                    background=["#F07178","#F07178"]
+                ),
+
+                # Nueva Confirguracion
+                widget.Image(
+                    filename=path.join(path.expanduser("~"), ".config", "qtile", "img", "bar1.png")
+                ),
+
+                widget.Chord(
+                    chords_colors={
+                        "launch": ("#ff0000", "#ffffff"),
+                    },
+                    name_transform=lambda name: name.upper(),
+                ),
+                # widget.TextBox("default config", name="default"),
+
+                # Confirguracion por (Defecto)
+                # widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
+                
+                # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
+                # widget.StatusNotifier(),
+                
+                # Nueva Confirguracion
+                widget.TextBox(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"],text=""), # nf-fa-clock_o
+
+                # Confirguracion por (Defecto)
+                # widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
+
+                # Nueva Confirguracion
+                widget.Clock(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"], padding=5, format='%d/%m/%Y - %H:%M:%S '),
+
+                # widget.QuickExit(),
+            ],
+            26,
+            opacity = 0.95
+            # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
+            # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
+        ),
+        # You can uncomment this variable if you see that on X11 floating resize/moving is laggy
+        # By default we handle these events delayed to already improve performance, however your system might still be struggling
+        # This variable is set to None (no cap) by default, but you can set it to 60 to indicate that you limit it to 60 events per second
+        # x11_drag_polling_rate = 60,
+    ),
+    # Configuración de la segunda pantalla (replicar según el número de pantallas)
+    Screen(
+        top=bar.Bar(
+            [
+                widget.GroupBox(
+                    foreground=["#f1ffff", "#f1ffff"],
+                    background=["#0f101a", "#0f101a"],
+                    font='UbuntuMono Nerd Font Mono',
+                    fontsize=19,
+                    margin_y=3,
+                    margin_x=0,
+                    padding_y=8,
+                    padding_x=5,
+                    borderwidth=1,
+                    active=["#f1ffff", "#f1ffff"],
+                    inactive=["#f1ffff", "#f1ffff"],
+                    rounded=False,
+                    highlight_method='block',
+                    urgent_alert_method='block', # <- linea agregada ... no he visto su uso
+                    urgent_border=["#F07178", "#F07178"], # <- linea agregada ... no he visto su uso
+                    this_current_screen_border=["#a151d3", "#a151d3"],
+                    this_screen_border=["#353c4a", "#353c4a"],
+                    other_current_screen_border=["#0f101a", "#0f101a"],
+                    other_screen_border=["#0f101a", "#0f101a",],
+                    disable_drag=True # <- linea agregada ... no he visto su uso
+                ),
+                # widget.GroupBox(),
+                # widget.Prompt(),
+                widget.WindowName(
+                    foreground=["#a151d3", "#a151d3"],
+                    background=["#0f101a", "#0f101a"],
+                    fontsize=16,
+                    font='UbuntuMono Nerd Font Mono',
+
+                ),
+                
+                # Quitar el systray por que solo se vera en una pantalla
+                # widget.Systray(),
+
+                # Nueva Confirguracion
+                widget.Sep(
+                    linewidth=0,
+                    padding=5,
+                    background=["#0f101a","#0f101a"]
+                ),
+
+                # Nueva Confirguracion
+                widget.Image(
+                    filename=path.join(path.expanduser("~"), ".config", "qtile", "img", "bar2.png")
+                ),
+                
+                # Nueva Confirguracion
+                widget.CurrentLayoutIcon(
+                    scale=0.65,
+                    foreground=["#0f101a","#0f101a"],
+                    background=["#F07178","#F07178"] 
+                ),
+
+                # Confirguracion por (Defecto)
+                # widget.CurrentLayout(),
+
+                # Nueva Confirguracion
+                widget.CurrentLayout(
+                    foreground=["#0f101a","#0f101a"],
+                    background=["#F07178","#F07178"],
+                ),
+
+                # Nueva Confirguracion
+                widget.Sep(
+                    linewidth=0,
+                    padding=5,
+                    background=["#F07178","#F07178"]
+                ),
+
+                # Nueva Confirguracion
+                widget.Image(
+                    filename=path.join(path.expanduser("~"), ".config", "qtile", "img", "bar1.png")
+                ),
+
+                widget.Chord(
+                    chords_colors={
+                        "launch": ("#ff0000", "#ffffff"),
+                    },
+                    name_transform=lambda name: name.upper(),
+                ),
+                # widget.TextBox("default config", name="default"),
+
+                # Confirguracion por (Defecto)
+                # widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
+                
+                # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
+                # widget.StatusNotifier(),
+                
+                # Nueva Confirguracion
+                widget.TextBox(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"],text=""), # nf-fa-clock_o
+
+                # Confirguracion por (Defecto)
+                # widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
+
+                # Nueva Confirguracion
+                widget.Clock(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"], padding=5, format='%d/%m/%Y - %H:%M:%S '),
+
+                # widget.QuickExit(),
+            ],
+            26,
+            opacity = 0.95
+            # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
+            # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
+        ),
+        # You can uncomment this variable if you see that on X11 floating resize/moving is laggy
+        # By default we handle these events delayed to already improve performance, however your system might still be struggling
+        # This variable is set to None (no cap) by default, but you can set it to 60 to indicate that you limit it to 60 events per second
+        # x11_drag_polling_rate = 60,
+    ),
+]
+```
+
+**La configuracion completa seria:**
+
+```python
 # Autor: Daniel Benjamin Perez Morales
 # GitHub: https://github.com/D4nitrix13
 # Gitlab: https://gitlab.com/D4nitrix13
@@ -113,9 +473,6 @@ keys = [
 
     # Browser
     Key([mod], "b", lazy.spawn("firefox")),
-
-    # File Explorer
-    Key([mod], "e", lazy.spawn("thunar")),
 
     # Screenshot
     Key([mod], "s", lazy.spawn("scrot")),
@@ -327,7 +684,7 @@ screens = [
                 # widget.StatusNotifier(),
                 
                 # Nueva Confirguracion
-                widget.TextBox(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"],text=""), # nf-fa-clock_o -> f017
+                widget.TextBox(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"],text=""), # nf-fa-clock_o
 
                 # Confirguracion por (Defecto)
                 # widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
@@ -347,7 +704,7 @@ screens = [
         # This variable is set to None (no cap) by default, but you can set it to 60 to indicate that you limit it to 60 events per second
         # x11_drag_polling_rate = 60,
     ),
-    # Configuración de la segunda pantalla (replicar según el número de pantallas)
+    # Segunda pantalla (copiar esto segun cuantas pantallas tengamos)
     Screen(
         top=bar.Bar(
             [
@@ -441,7 +798,7 @@ screens = [
                 # widget.StatusNotifier(),
                 
                 # Nueva Confirguracion
-                widget.TextBox(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"],text=""), # nf-fa-clock_o -> f017
+                widget.TextBox(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"],text=""), # nf-fa-clock_o
 
                 # Confirguracion por (Defecto)
                 # widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
@@ -544,3 +901,4 @@ wl_input_rules = None
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
 wmname = "LG3D"
+```

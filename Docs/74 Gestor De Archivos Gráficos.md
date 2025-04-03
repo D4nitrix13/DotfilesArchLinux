@@ -1,3 +1,61 @@
+<!-- Autor: Daniel Benjamin Perez Morales -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- Gitlab: https://gitlab.com/D4nitrix13 -->
+<!-- Correo electrónico: danielperezdev@proton.me -->
+
+# ***Gestor de Ficheros Gráficos***
+
+---
+
+## ***Thunar***
+
+---
+
+> *Thunar es un gestor de ficheros ligero y rápido diseñado para el entorno de escritorio XFCE. Ofrece una interfaz intuitiva y una buena integración con el sistema operativo, siendo ideal para usuarios que buscan un explorador de ficheros eficiente y personalizable.*
+
+---
+
+### ***Página oficial de Thunar***
+
+- *[Thunar Official Page](https://docs.xfce.org/xfce/thunar/start "https://docs.xfce.org/xfce/thunar/start")*
+
+---
+
+#### ***Página oficial de Arch Linux sobre Thunar***
+
+- *[Arch Linux Thunar Page](https://wiki.archlinux.org/title/Thunar "https://wiki.archlinux.org/title/Thunar")*
+- *[Arch Linux Thunar 4.18.10-2](https://archlinux.org/packages/extra/x86_64/thunar/ "https://archlinux.org/packages/extra/x86_64/thunar/")*
+
+---
+
+#### ***Repositorio de GitHub de Thunar***
+
+- *[Thunar GitHub Repository](https://github.com/xfce-mirror/thunar "https://github.com/xfce-mirror/thunar")*
+
+---
+
+### ***Instalación de Thunar***
+
+**Para instalar Thunar en Arch Linux, puedes utilizar el siguiente comando:**
+
+```bash
+sudo pacman -Syu --noconfirm thunar
+```
+
+---
+
+### ***Atajo de Teclado para Thunar en Qtile***
+
+*Para añadir un atajo de teclado en Qtile que abra Thunar, puedes añadir la siguiente configuración a tu fichero de configuración de Qtile (generalmente `~/.config/qtile/config.py`):*
+
+```python
+# File Explorer
+Key([mod], "e", lazy.spawn("thunar")),
+```
+
+**El fichero de configuracion se veria de la siguiente manera:**
+
+```python
 # Autor: Daniel Benjamin Perez Morales
 # GitHub: https://github.com/D4nitrix13
 # Gitlab: https://gitlab.com/D4nitrix13
@@ -327,7 +385,7 @@ screens = [
                 # widget.StatusNotifier(),
                 
                 # Nueva Confirguracion
-                widget.TextBox(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"],text=""), # nf-fa-clock_o -> f017
+                widget.TextBox(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"],text=""), # nf-fa-clock_o
 
                 # Confirguracion por (Defecto)
                 # widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
@@ -441,7 +499,7 @@ screens = [
                 # widget.StatusNotifier(),
                 
                 # Nueva Confirguracion
-                widget.TextBox(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"],text=""), # nf-fa-clock_o -> f017
+                widget.TextBox(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"],text=""), # nf-fa-clock_o
 
                 # Confirguracion por (Defecto)
                 # widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
@@ -544,3 +602,20 @@ wl_input_rules = None
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
 wmname = "LG3D"
+```
+
+---
+
+### ***Ejecutar Thunar con Rofi***
+
+**Si quieres ejecutar Thunar utilizando Rofi, puedes crear una entrada en tu configuración de Rofi. Aquí tienes un ejemplo de cómo hacerlo:**
+
+1. **Asegúrate de tener Rofi instalado. Si no lo tienes, instálalo con:**
+
+    ```bash
+    sudo pacman -Syu --noconfirm rofi
+    ```
+
+2. *Añade Thunar a tu lista de aplicaciones disponibles en Rofi. Esto generalmente no requiere pasos adicionales si Thunar está instalado correctamente, ya que Rofi detecta automáticamente las aplicaciones disponibles.*
+
+3. *Para lanzar Thunar desde Rofi, abre Rofi y busca "Thunar", luego selecciona la entrada correspondiente.*

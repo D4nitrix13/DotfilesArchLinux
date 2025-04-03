@@ -1,3 +1,11 @@
+<!-- Autor: Daniel Benjamin Perez Morales -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- Gitlab: https://gitlab.com/D4nitrix13 -->
+<!-- Correo electrónico: danielperezdev@proton.me -->
+
+# ***Configuracion Qtile***
+
+```python
 # Autor: Daniel Benjamin Perez Morales
 # GitHub: https://github.com/D4nitrix13
 # Gitlab: https://gitlab.com/D4nitrix13
@@ -113,9 +121,6 @@ keys = [
 
     # Browser
     Key([mod], "b", lazy.spawn("firefox")),
-
-    # File Explorer
-    Key([mod], "e", lazy.spawn("thunar")),
 
     # Screenshot
     Key([mod], "s", lazy.spawn("scrot")),
@@ -327,7 +332,7 @@ screens = [
                 # widget.StatusNotifier(),
                 
                 # Nueva Confirguracion
-                widget.TextBox(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"],text=""), # nf-fa-clock_o -> f017
+                widget.TextBox(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"],text=""), # nf-fa-clock_o
 
                 # Confirguracion por (Defecto)
                 # widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
@@ -441,7 +446,7 @@ screens = [
                 # widget.StatusNotifier(),
                 
                 # Nueva Confirguracion
-                widget.TextBox(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"],text=""), # nf-fa-clock_o -> f017
+                widget.TextBox(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"],text=""), # nf-fa-clock_o
 
                 # Confirguracion por (Defecto)
                 # widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
@@ -544,3 +549,4 @@ wl_input_rules = None
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
 wmname = "LG3D"
+```

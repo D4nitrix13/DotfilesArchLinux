@@ -1,3 +1,36 @@
+<!-- Autor: Daniel Benjamin Perez Morales -->
+<!-- GitHub: https://github.com/D4nitrix13 -->
+<!-- Gitlab: https://gitlab.com/D4nitrix13 -->
+<!-- Correo electrónico: danielperezdev@proton.me -->
+
+# ***Tomar capturas de pantalla en Arch Linux***
+
+**Para tomar capturas de pantalla en Arch Linux, puedes instalar `scrot` con el siguiente comando:**
+
+```bash
+sudo pacman -Syu scrot --noconfirm
+```
+
+---
+
+## ***Información adicional***
+
+- **Página oficial en Arch Linux:** *[scrot](https://archlinux.org/packages/extra/x86_64/scrot/ "https://archlinux.org/packages/extra/x86_64/scrot/")*
+- **Repositorio GitHub:** *scrot es un proyecto de código abierto que puedes encontrar en [GitHub](https://github.com/resurrecting-open-source-projects/scrot "https://github.com/resurrecting-open-source-projects/scrot").*
+
+- *Una vez instalado `scrot`, puedes configurar un atajo de teclado en Qtile para capturar pantalla. Para añadir un atajo de teclado en tu configuración de Qtile (`config.py`), puedes agregar una combinación de teclas similar a esta:*
+
+```python
+# Screenshot
+Key([mod], "s", lazy.spawn("scrot")),
+Key([mod, "shift"], "s", lazy.spawn("scrot -s")),
+```
+
+- *Esto te permitirá capturar fácilmente pantallas y personalizar la configuración según tus preferencias en Qtile en Arch Linux.*
+
+**La configuracion completa seria:**
+
+```python
 # Autor: Daniel Benjamin Perez Morales
 # GitHub: https://github.com/D4nitrix13
 # Gitlab: https://gitlab.com/D4nitrix13
@@ -113,9 +146,6 @@ keys = [
 
     # Browser
     Key([mod], "b", lazy.spawn("firefox")),
-
-    # File Explorer
-    Key([mod], "e", lazy.spawn("thunar")),
 
     # Screenshot
     Key([mod], "s", lazy.spawn("scrot")),
@@ -327,7 +357,7 @@ screens = [
                 # widget.StatusNotifier(),
                 
                 # Nueva Confirguracion
-                widget.TextBox(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"],text=""), # nf-fa-clock_o -> f017
+                widget.TextBox(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"],text=""), # nf-fa-clock_o
 
                 # Confirguracion por (Defecto)
                 # widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
@@ -441,7 +471,7 @@ screens = [
                 # widget.StatusNotifier(),
                 
                 # Nueva Confirguracion
-                widget.TextBox(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"],text=""), # nf-fa-clock_o -> f017
+                widget.TextBox(background=["#a151d3","#a151d3"], foreground=["#0f101a","#0f101a"],text=""), # nf-fa-clock_o
 
                 # Confirguracion por (Defecto)
                 # widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
@@ -544,3 +574,4 @@ wl_input_rules = None
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
 wmname = "LG3D"
+```
