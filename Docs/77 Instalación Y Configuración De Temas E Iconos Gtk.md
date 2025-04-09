@@ -39,7 +39,7 @@
 # DO NOT EDIT! This file will be overwritten by LXAppearance.
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
-include "/home/tu_usuario/.gtkrc-2.0.mine"
+include "/home/user/.gtkrc-2.0.mine"
 gtk-theme-name="Material-Black-Blueberry"
 gtk-icon-theme-name="Material-Black-Blueberry-Suru"
 gtk-font-name="Noto Sans 11"
