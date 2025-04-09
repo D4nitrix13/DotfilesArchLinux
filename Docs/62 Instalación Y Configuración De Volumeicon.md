@@ -23,6 +23,7 @@ volumeicon &
    - **Device:** *Default*
 2. **Status Icon**
    - **Icon Theme:** *White Gnome (default es el valor por defecto)*
+      - [x] *Use panel-specific icons if available* 
    - **Left Mouse Button Action**
      - [ ] *Mute Volume*
      - [x] *Show Slider*
@@ -30,9 +31,9 @@ volumeicon &
      - [x] *Open Mixer*
      - [ ] *Mute Volume*
    - **Layout Preferences**
-     - [x] *Use Horizontal Slider*
-     - [ ] *Show Sound Level*
-     - [ ] *Use Transparent Background (requires compositor)*
+     - [] *Use Horizontal Slider*
+     - [x] *Show Sound Level*
+     - [x] *Use Transparent Background (requires compositor)*
 
 **Cierra la ventana de preferencias.**
 
