@@ -31,7 +31,7 @@ volumeicon &
      - [x] *Open Mixer*
      - [ ] *Mute Volume*
    - **Layout Preferences**
-     - [] *Use Horizontal Slider*
+     - [ ] *Use Horizontal Slider*
      - [x] *Show Sound Level*
      - [x] *Use Transparent Background (requires compositor)*
 
