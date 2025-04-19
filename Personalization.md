@@ -3,53 +3,37 @@
 <!-- Gitlab: https://gitlab.com/D4nitrix13 -->
 <!-- Correo electrónico: danielperezdev@proton.me -->
 
-<https://wiki.archlinux.org/title/List_of_applications/Utilities>
+Explica cada comando, subcomando, opciones y valores de la siguiente manera:
 
-<https://wiki.archlinux.org/title/Picom>
-<https://wiki.archlinux.org/title/Dunst>
+1. **Comando principal**: Describe qué hace el comando principal y su propósito general.
+2. **Subcomando**: Si el comando tiene subcomandos, explica qué hace cada uno y cuándo se utiliza.
+3. **Opciones**: Detalla las opciones disponibles, qué significan y cómo afectan el comportamiento del comando.
+4. **Valores**: Si las opciones requieren valores, explica qué tipo de valores se pueden usar y cómo influyen en el resultado.
+5. **Ejemplo práctico**: Proporciona un ejemplo claro y funcional que muestre cómo usar el comando con sus subcomandos, opciones y valores.
+
+Por ejemplo:
+
+```bash
+# Comando: pacman
+# Descripción: Pacman es el gestor de paquetes de Arch Linux. Se utiliza para instalar, actualizar y gestionar paquetes.
+# Subcomando: -S
+# Descripción: Se utiliza para instalar paquetes desde los repositorios.
+# Opciones:
+#   --needed: Evita reinstalar paquetes que ya están instalados.
+#   --noconfirm: Omite las confirmaciones interactivas.
+# Valores:
+#   Nombre del paquete: Especifica el paquete que deseas instalar.
+# Ejemplo:
+pacman -S --needed --noconfirm vim
+# Explicación: Instala el editor de texto Vim si no está instalado, sin pedir confirmación.
+
 <https://wiki.archlinux.org/title/LightDM>
+
+
 ---
 
 si conectamos un disco que tenga varios sistema operativo instalado basta con montar la particion efi para que reconozca windwos si esta instalado y para que reconozca linux
 
-change font grub
-<https://www.baeldung.com/linux/grub-menu-font-size>
-
-grub-mkfont --output=/boot/grub/fonts/ubuntuMonoBoldItalic.pf2 /usr/share/fonts/TTF/UbuntuMonoNerdFontMono-BoldItalic.ttf
-
-echo "GRUB_FONT=/boot/grub/fonts/ubuntuMonoBoldItalic.pf2" | sudo tee -a /etc/default/grub
-sudo grub-mkconfig -o /boot/grub/grub.cfg
-volume icon directory config
-
-agreagar en .config/qtile/autostart.sh
-
-if [ -f /sys/class/power_supply/BAT0/status ]; then
-    cbatticon -u 5 &
-fi
-
-sudo pacman -Syu --noconfirm wmctrl xorg-xprop xorg-xwininfo xorg-xrandr
-
-sudo pacman -Syu --noconfirm psutils python-pip python-psutil
-sudo pacman -Syu pacman-contrib --noconfirm
-sudo pacman -Syu python-dbus-fast --noconfirm
-sudo pacman -Syu --noconfirm lightdm-slick-greeter
-sudo pacman -Syu upower --noconfirm
-
-sudo pacman -Syu cronie --noconfirm
-
-sudo systemctl enable cronie.service
-export VISUAL="nvim"
-export EDITOR="nvim"
-
-sudo mkdir /root/Scripts -pv
-mkdir /home/d4nitrix13/Scripts -pv
-
-mkdir ~/.config/dunst -pv
-
-mkdir ~/.config/picom -pv
-touch ~/.config/picom/picom.conf
-
-cp /etc/dunst/dunstrc ~/.config/dunst/dunstrc
 
 optional no
 sudo pacman -Syu redshift --noconfirm
@@ -89,116 +73,5 @@ fichero -> 30
 ---
 
 atajo de teclado vscode y firefox ctrl + w cierra ventana
-
----
-
-<!-- todo -->
-
-instalar psutils y python-pip python-psutil
-
-sudo pacman -Syu --noconfirm psutils python-pip python-psutil
-
-```bash
-pacman -Ss psutil
-extra/psutils 3.3.2-2
-    A set of postscript utilities
-extra/python-psutil 5.9.8-4
-    A cross-platform process and system utilities module for Python
-extra/texlive-fontutils 2024.2-2 (texlive)
-    TeX Live - Graphics and font utilities
-```
-
-```bash
-sudo pacman -S python-psutil
-```
-
-instalar checkupdates
-
-sudo pacman -Syu pacman-contrib
-
-ventana floante
-
-mod shift f
-
-instalamos para mas transparencia
-
-sudo pacman -Syu --noconfirm redshift
-
-crear un directorio themes
-
-cp -r ~/dotfiles/.theme/ ~/
-
-cp -r ~/dotfiles/.config/alacritty/ ~/
-
-tema lightdm
-
-sudo pacman -Syu --noconfirm lightdm-webkit2-greeter
-
-Remplazar
-
-nano /etc/lightdm/lightdm.conf
-
-```bash
-# greeter-session=example-gtk-gnome
-greeter-session=lightdm-webkit2-greeter
-```
-
----
-
-**Restructuracion del Directorio de configuracion de qtile `~/.config/qtile/`:**
-
-```bash
-tree -C 
-.
-├── autostart.sh
-├── config.json
-├── config.py
-├── README.md
-├── settings
-│   ├── groups.py
-│   ├── keys.py
-│   ├── layouts.py
-│   ├── mouse.py
-│   ├── path.py
-│   ├── screens.py
-│   ├── theme.py
-│   └── widgets.py
-└── themes
-    ├── dark-grey
-    │   ├── colors.json
-    │   └── img
-    │       ├── bar1.png
-    │       ├── bar2.png
-    │       ├── bar3.png
-    │       └── bar4.png
-    ├── dracula
-    │   ├── colors.json
-    │   └── img
-    │       ├── bar1.png
-    │       ├── bar2.png
-    │       ├── bar3.png
-    │       └── bar4.png
-    ├── material-ocean
-    │   ├── colors.json
-    │   └── img
-    │       ├── bar1.png
-    │       ├── bar2.png
-    │       ├── bar3.png
-    │       └── bar4.png
-    ├── onedark
-    │   ├── colors.json
-    │   └── img
-    │       ├── bar1.png
-    │       ├── bar2.png
-    │       ├── bar3.png
-    │       └── bar4.png
-    └── README.md
-
-11 directories, 33 files
-```
-
----
-
-gestor de ficheros de terminal
 
 ---
